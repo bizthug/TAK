@@ -17,7 +17,16 @@ var lng;
 var oid = 0;
 var sid = 0;
 
-
+var first = null
+function LoadMap() {
+    //var main = document.getElementById('mainMap')
+    //var data = { zoom: 11, center: { lat: 13.75582, lng: 100.567428 } }
+    //first = new google.maps.Map(main, data)
+    //new google.maps.Marker({ map: first, position: { lat: 13.755824, lng: 100.567428 } })
+    console.log(lat);
+    console.log(lng);
+    initMap(lat, lng);
+}
 function initMap(locationLat, locationLng) {
     var getCurrent = false;
     if (locationLat == undefined || locationLat == 0) {
